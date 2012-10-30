@@ -1,0 +1,18 @@
+Package: drbd-initramfs-hook
+Version: 0.1-1
+Section: net
+Priority: optional
+Architecture: all
+Depends: initramfs-tools, drbd8-utils
+Suggests:
+Conflicts:
+Provides:
+Maintainer: Gabor Heja <drbd-initramfs-hooks@dev.kakaopor.hu>
+Source:
+Description: Adds DRBD tools and configs to initramfs
+ Adds the following files (and their dependencies) to the initramfs image:
+   * /sbin/drbdadm
+   * /sbin/drbdmeta
+   * /sbin/drbdsetup
+   * /etc/drbd.conf
+   * /etc/drbd.d/*
